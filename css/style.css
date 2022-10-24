@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+:root{
+  --cor1: #200661;
+  --cor2: #7C53E6;
+  --cor3: #490DE0;
+  --cor4: #433761;
+  --cor5: #390AAD;
+
+  --fonte-padrão: arial, verdana, helvetica, sans-serif;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: var(--fonte-padrão);
+}
+
+header .menu{
+  background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px ;
+}
+
+header .logo{
+  color: black;
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+header nav a{
+  text-decoration:none;
+  color: white;
+  padding-right: 30px;
+}
+
+header nav a:hover{
+  color:var(--cor5)
+}
+
+header nav a:active{
+  color: white;
+}
+
+main{
+  padding: 20px;
+}
+
+section.quemSou{
+  margin:auto;
+  display: flex;
+}
+
+section article.caixaDeTexto{
+  min-width: 320px;
+  max-width: 320px;
+}
+
+.circulo{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.circulo img{
+  position: absolute;
+  width: 100%;
+}
+
+footer{
+  background-color: var(--cor5);
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
