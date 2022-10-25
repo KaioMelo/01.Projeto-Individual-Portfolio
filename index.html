@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
   <title>Meu Portfólio</title>
 </head>
+
 <body>
-    <header>
-      <div class="menu">
-        <h2 class="logo">KM</h2>
-        <nav>
-          <ul>
-            <a href="">Quem sou</a>
-            <a href="">Hobbies e interesses</a>
-            <a href="">Contato</a>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <header>
+    <div id="menu">
+      <h2 id="logo">KM</h2>
+      <nav>
+        <ul>
+          <a href="#quemSou">Quem sou</a>
+          <a href="#hobbies">Hobbies e interesses</a>
+          <a href="#contatos">Contato</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
-    <section class="quemSou">
-      <article class="caixaDeTexto">
+    <section class="container" id="quemSou">
+      <article id="caixa">
         <h2>Olá,</h2>
         <h3>Prezado senhor (a),</h3>
         <p>Me chamo <strong>Kaio Melo dos Santos</strong>, curso ensino superior em análise
           e desenvolvimento de sistemas e sou formado em técnico em Informatica pelo Senac RJ.
+        </p>
+        <p>
           Atualmente exerço a função de militar da ativa em cargo temporário pela Força
           Aerea Brasileira.
+        </p>
+        <p>
           Apaixonado por tecnologias em geral desde cedo, mas a area de desenvolvimento me despertou um interesse maior
           quando tive um primeiro contato em 2017 quando no curso técnico
         </p>
       </article>
-      <div class="circulo">
-        <img src="assets/images/KaioMelo.JPG" alt="Kaio Melo, desenvolvedor da página">
-      </div>
+      <picture id="circulo">
+        <img src="img/KaioMelo.JPG" alt="Kaio Melo, desenvolvedor da página">
+      </picture>
     </section>
-    <section class="hobbies">
-
+    <section class="container" id="hobbies">
+      <h2>Hobbies e Interesses</h2>
     </section>
-    <section class="contatos">
-
+    <section class="container" id="contatos">
+      <h2>Contatos</h2>
+        <div id="icones">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+        </div>
     </section>
   </main>
   <footer class="rodape">
     <p> &copy;Site desenvolvido por <strong>Kaio Melo dos santos</strong> para os Programadores Cariocas</p>
   </footer>
 </body>
+
 </html>
