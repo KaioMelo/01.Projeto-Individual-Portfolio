@@ -30,7 +30,7 @@ header #menu{
 }
 
 header #logo{
-  color: black;
+  color:red;
   font-size: 40px;
   padding-left: 10px;
 }
@@ -74,9 +74,10 @@ main{
   margin-right: 50px;
   padding: 10px;
   display: grid;
-  place-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 26px 42px rgba(0, 0, 0, 0.226);
+  border-radius: 8px 30px 8px;
 }
 
 #circulo{
@@ -85,11 +86,16 @@ main{
   height: 300px;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 26px 42px rgba(0, 0, 0, 0.226);
 }
 
 #circulo img{
   position: absolute;
   width: 100%;
+}
+
+#hobbie{
+  background-image: url('fundo.jpg');
 }
 
 #icones{
