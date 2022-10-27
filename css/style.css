@@ -20,9 +20,15 @@ body{
   font-family: var(--fonte-padrão);
 }
 
+img{
+  max-width: 100%;
+  display: block;
+}
+
 header #menu{
   background-image: linear-gradient(to right, var(--cor1), var(--cor2));
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -59,25 +65,31 @@ main{
   position: relative;
 }
 
-#quemSou{
+.flex-quemSou{
   display: flex;
+  padding: 80px;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding-top: 80px;
-  margin: auto;
+  align-items: center;
+  margin: 0% auto;
   background-color: var(--cor4);
 }
 
+.flex-quemSou > div{
+  margin: 20px;
+}
+
+.flex-quemSou  div  article{
+  flex: 1 1 200px;
+}
+
 #caixa{
-  width: 300px;
-  height: 300px;
   margin-right: 50px;
   padding: 10px;
-  display: grid;
-  justify-content: center;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 26px 42px rgba(0, 0, 0, 0.226);
-  border-radius: 8px 30px 8px;
+  border-radius: 8px;
 }
 
 #circulo{
@@ -97,17 +109,29 @@ main{
 #icones-quemSou{
   position: relative;
   background-color: var(--cor4);
+  text-align: center;
+  color: white;
 }
 
 #icones-quemSou > a{
   display: inline-flex;
-  width: 100px;
-  height: 100px;
-  color: aliceblue;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
   margin: 0 6px;
-  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
   align-items: center;
+  justify-content: center;
   font-size: 50px;
+}
+
+.fa-html5{
+  color: rgb(232, 95, 36);
+}
+
+.fa-css3-alt{
+  color:rgb(34, 159, 220)
 }
 
 #hobbie{
@@ -115,6 +139,17 @@ main{
   padding: 0;
   margin: 0;
   color: antiquewhite;
+}
+
+.flex-hobbie{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0% auto;
+}
+
+.flex-hobbie > div{
+  flex: 1 1 100px;
+  margin: 10px;
 }
 
 #icones-contatos{
