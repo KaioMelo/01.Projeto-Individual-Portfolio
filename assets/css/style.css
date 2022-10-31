@@ -148,13 +148,12 @@ main{
 }
 
 #formulario{
-  display: block;
-  position: relative;
+  display: flex;
   padding: 30px;
+  flex-wrap: wrap;
 }
 
 fieldset{
-  width: 400px;
   margin: 0% auto;
   padding: 10px;
 }
