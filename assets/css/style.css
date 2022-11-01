@@ -55,18 +55,8 @@ header nav a:active{
   color: white;
 }
 
-main{
-  margin: 0px;
-  padding: 0px;
-}
-
-.container{
-  position: relative;
-}
-
 .flex-quemSou{
   display: flex;
-  padding: 80px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
@@ -76,11 +66,7 @@ main{
 }
 
 .flex-quemSou > div{
-  margin: 20px;
-}
-
-.flex-quemSou  div  article{
-  flex: 1 1 200px;
+  margin: 50px;
 }
 
 #caixa{
