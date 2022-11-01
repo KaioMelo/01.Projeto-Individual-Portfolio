@@ -1,16 +1,19 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root{
   --cor1: #200661;
   --cor2: #7C53E6;
-  --cor3: #490DE0;
+  --cor3: #490DE0;/*Paletas de cores utilizadas*/
   --cor4: #433761;
   --cor5: #390AAD;
 
   --fonte-padrão: arial, verdana, helvetica, sans-serif;
+  --fonte-externa: 'Roboto';
 }
 
-*{
+*{ /*configuração geral do site*/
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -25,17 +28,22 @@ img{
   display: block;
 }
 
+h1, h2, h3{
+  font-family: var(--fonte-externa);
+}
+
 header #menu{
   background-image: linear-gradient(to right, var(--cor1), var(--cor2));
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px ;
 }
 
 header #logo{
+  padding: 5px;
   color:red;
   font-size: 40px;
   padding-left: 10px;
@@ -48,14 +56,14 @@ header nav a{
 }
 
 header nav a:hover{
-  color:var(--cor5)
+  color: var(--cor1);
 }
 
 header nav a:active{
   color: white;
 }
 
-.flex-quemSou{
+.flex-quemSou{/*Configurações de sessão Quem sou*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -69,7 +77,7 @@ header nav a:active{
   margin: 50px;
 }
 
-#caixa{
+#caixa{ /*Caixa de texto*/
   margin-right: 50px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.4);
@@ -77,7 +85,7 @@ header nav a:active{
   border-radius: 8px;
 }
 
-#circulo{
+#circulo{ /*Foto do desenvolvedor*/
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -95,6 +103,7 @@ header nav a:active{
   position: relative;
   background-color: var(--cor4);
   text-align: center;
+  padding-top: 30px;
   color: white;
 }
 
@@ -112,9 +121,9 @@ header nav a:active{
 }
 
 .fa-html5{
-  color: rgb(232, 95, 36);
+  color: rgb(232, 95, 36); 
 }
-
+/* Mudança de Cores do Icones de Tecnologias utilizadas*/
 .fa-css3-alt{
   color:rgb(34, 159, 220)
 }
@@ -124,7 +133,7 @@ header nav a:active{
   flex-wrap: wrap;
 }
 
-.flex-hobbie > div{
+.flex-hobbie > div{ /*Redimensinamento das imagens da sessão hobbies*/
   flex: 1 1 100px;
   margin: 10px;
 }
@@ -148,7 +157,7 @@ header nav a:active{
   margin-bottom: 20px;
 }
 
-input, textarea{
+input, textarea{ /*Configurações do formulário*/
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
@@ -169,7 +178,7 @@ textarea{
   padding: 20px;
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px){ /*Responsividade do formulário*/
   #formulario{
     width: 100%;
   }
