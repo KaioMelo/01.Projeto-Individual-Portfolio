@@ -3,7 +3,7 @@
 
  ## 💡 Início 
 
-A ideia do projeto individual foi criar um portfólio para se apresentar para colegas, recrutadores e facilidores.
+A ideia do projeto individual "Quem não é visto não é lembrado!" foi criar um portfólio para se apresentar para colegas, recrutadores e facilidores.
 
 ## ⚙ Tecnologias
 
